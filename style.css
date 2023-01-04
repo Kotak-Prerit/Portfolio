@@ -19,29 +19,37 @@ body{
     height: 100vh;
     width: 100%;
     display: flex;
-    background: url(img/texture-7.png);
     justify-content: center;
     align-items: center;
-    animation: background 450ms infinite;
+}
+.grain{
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.3;
+    animation:  background 1s ease-in-out infinite;
+}
+.grain img{
+    height: 100vh;
+    width: 70%;
 }
 @keyframes background{
     0%{
-        background: none;
+        justify-content: right;
     }
     25%{
-        background: url(img/texture-7.png);
+        justify-content: left;
     }
     50%{
-        background: none;
-    }
-    60%{
-        background: url(img/texture-7.png);
+        justify-content: right;
     }
     75%{
-        background: none;
+        justify-content: left;
     }
     100%{
-        background: url(img/texture-7.png);
+        justify-content: right;
     }
 }
 .img{
@@ -83,6 +91,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     top: 0;
+    z-index: 100;
 }
 .menu p{
     font-family: 'Poppins',sans-serif;
@@ -92,6 +101,15 @@ h1{
 }
 .menu a{
     text-decoration: none;
+    color: #d20000;
+    font-weight: 600;
+    padding-inline: 5px;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.portfolio{
+    letter-spacing: 1px;
 }
 .profile{
     position: absolute;
@@ -112,6 +130,13 @@ h1{
     }
     img{
         height: 60vh;
+    }
+
+}
+@media (max-width:600px) {
+
+    .menu p{
+        font-size: 14px;
     }
 
 }
