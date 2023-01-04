@@ -7,6 +7,14 @@ body{
     box-sizing: border-box;
     font-family: 'Beatrice', Arial, sans-serif;
 }
+#loading{
+    background: center url(img/loader.gif) #0A0B0D no-repeat ;
+    height: 100vh;
+    width: 100%;
+    background-size: 20%;
+    position: fixed;
+    z-index: 100;
+}
 .container{
     height: 100vh;
     width: 100%;

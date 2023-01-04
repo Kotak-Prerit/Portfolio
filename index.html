@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="style.css">
     <title>Prerit Portfolio</title>
 </head>
-<body bgcolor="0B0B0D">
+<body onload="func()" bgcolor="0B0B0D">
+
+    <div id="loading"></div>
+
     <div class="container">
     <div class="menu">
         <p>PORTFOLIO © 2023</p>
-        <p>Source Code : <a href="#">Github</a></p>
+        <p>Source Code : <a href="https://github.com/Kotak-Prerit/Portfolio" target="_blank">Github</a></p>
     </div>
     <div class="img">
         <img src="img/profile-01.jpeg" alt="Prerit - Front-End Designer">
@@ -31,5 +35,10 @@
         <img class="profile" src="img/profile-removebg.png" alt="Prerit - Transparent">
     </div>
     </div>
+
+    <script>
+        function func(){loading.style.display = "none";}
+    </script>
+
 </body>
 </html>
